@@ -29,8 +29,7 @@ document.getElementById("password").innerHTML =
 `;
 
 document.getElementById("nome").innerHTML = 
-`${nome}
-`;
+`${nome}`;
 
 document.getElementById("cognome").innerHTML = 
 `${cognome}
