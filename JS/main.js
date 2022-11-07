@@ -25,17 +25,14 @@ let password = nome + cognome + colPref + numero;
 
 
 document.getElementById("password").innerHTML = 
-`${password}
-`;
+`${password}`;
 
 document.getElementById("nome").innerHTML = 
 `${nome}`;
 
 document.getElementById("cognome").innerHTML = 
-`${cognome}
-`;
+`${cognome}`;
 
 document.getElementById("colPref").innerHTML = 
-`${colPref}
-`;
+`${colPref}`;
 

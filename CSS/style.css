@@ -165,11 +165,13 @@ font-family: 'Roboto', sans-serif;
 
 
 :root{
+    /* var(--padd-finestra-centro) */
+    --padd-finestra-centro: 50px;
     /* var(--h-finestra-centro) */
-    --h-finestra-centro: calc(var(--h-container) - var(--h-risposta));
+    --h-finestra-centro: calc(var(--h-container) - var(--h-risposta) - 2 * var(--padd-finestra-centro));
 }
 .centro .finestra{
-
+    margin-bottom: var(--padd-finestra-centro);
     height: var(--h-finestra-centro);
 }
 
@@ -183,7 +185,7 @@ font-family: 'Roboto', sans-serif;
 }
 
 .etic1{
-    top: calc(var(--h-header) + var(--h-risposta) + 20px);
+    top: calc(var(--h-risposta) +  var(--padd-finestra-centro) + 20px);
     padding-left: 70px;
     padding-right: 30px;
     border-radius: 0 10px 10px 0;
@@ -192,7 +194,7 @@ font-family: 'Roboto', sans-serif;
 
 
 .etic2{
-    bottom: 20px;
+    bottom: calc( var(--padd-finestra-centro) + 20px);
     right: var(--w-destra);
     padding-left: 30px;
     padding-right: 70px;
@@ -311,6 +313,14 @@ font-family: 'Roboto', sans-serif;
     /* border-radius: 20px; */
 }
 
+
+.info{
+    background-color: aliceblue;
+    border-radius: 7px;
+    width: 80%;
+    padding: 10px;
+    margin-top: 30px;
+}
 
 /* responsive
 ********************************* */
